@@ -140,14 +140,14 @@ body {
 }
 
 .logo {
-  width: 220px;
-  height: 220px;
+  width: 320px;
+  height: 320px;
   object-fit: cover;
   border-radius: 20px;
   box-shadow:
     0 20px 50px rgba(0, 0, 0, 0.2),
     0 0 0 3px #897171;
-  background: #fff;
+  background: #d9a76a;
   padding: 0;
   transition: transform 0.3s ease;
 }
@@ -248,8 +248,8 @@ body {
   }
 
   .logo {
-    width: 160px;
-    height: 160px;
+    width: 350px;
+    height: 400px;
   }
 
   .title {
@@ -289,8 +289,8 @@ body {
   }
 
   .logo {
-    width: 130px;
-    height: 130px;
+    width: 400px;
+    height: 400px;
   }
 }
 
