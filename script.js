@@ -11,7 +11,7 @@ document.querySelectorAll(".btn").forEach((btn) => {
 
 // Enhanced touch feedback for mobile
 document
-  .querySelectorAll(".contact-button, .nav-phone, .nav-instagram")
+  .querySelectorAll(".contact-button, .nav-phone, .nav-instagram, .nav-tiktok")
   .forEach((link) => {
     link.addEventListener("touchstart", function () {
       this.style.transform = "scale(0.95)";
@@ -22,28 +22,6 @@ document
       this.style.transform = "";
     });
   });
-
-// Special handling for Instagram links to open in app when on mobile
-document.querySelectorAll('a[href*="instagram.com"]').forEach((link) => {
-  // Check if user is on mobile device
-  const isMobile = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
-
-  if (isMobile) {
-    // Replace with instagram:// URL scheme to open in app if installed
-    // Keep original href as fallback
-    const originalHref = link.getAttribute("href");
-    link.setAttribute("href", "instagram://user?username=yourusername");
-
-    // If app is not installed, it will fall back to the web URL
-    link.addEventListener("click", function (e) {
-      setTimeout(() => {
-        if (!document.hidden) {
-          window.location.href = originalHref;
-        }
-      }, 500);
-    });
-  }
-});
 
 // Add click animation to contact buttons
 document.querySelectorAll(".contact-button").forEach((button) => {
