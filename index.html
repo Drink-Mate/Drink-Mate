@@ -3,94 +3,147 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>
-      Drink Mate | Premium Yerba Mate in Middle East | Kurdistan & Iraq
-    </title>
-    <meta
-      property="og:title"
-      content="Drink Mate - Premium Yerba Mate in Middle East"
-    />
-    <meta
-      property="og:description"
-      content="Authentic yerba mate available in Kurdistan and Iraq. Drink Different."
-    />
-    <meta property="og:image" content="logo.PNG" />
-    <meta property="og:url" content="https://drinkmate.com" />
-    <meta property="og:type" content="website" />
+    <title>MATE — Drink Different</title>
     <meta
       name="description"
-      content="Drink Mate brings authentic South American yerba mate to Middle East. Available in Kurdistan and Iraq. Natural energy, focus, and health benefits."
+      content="Authentic yerba mate available in Kurdistan and Iraq. Drink Different."
     />
-    <meta
-      name="keywords"
-      content="drink mate, yerba mate, drinkmate, middle east mate, kurdistan yerba mate, iraq yerba mate, drink different, natural energy"
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;0,700;1,400;1,600&family=Cinzel:wght@400;600;700&family=Inter:wght@300;400;500&display=swap"
+      rel="stylesheet"
     />
-    <meta name="author" content="Drink Mate" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
     />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;800&display=swap"
-      rel="stylesheet"
-    />
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <!-- Navigation Bar -->
-    <nav class="navbar">
-      <div class="navbar-container">
-        <div class="navbar-logo">
-          <h3>DrinkMate</h3>
-        </div>
-        <div class="navbar-contact">
-          <a
-            href="https://wa.me/9647500242233?"
-            target="_blank"
-            class="nav-btn nav-phone"
-          >
-            <i class="fab fa-whatsapp"></i>
-            <span>WhatsApp</span>
-          </a>
-          <a
-            href="https://www.instagram.com/drinkmate._/"
-            target="_blank"
-            class="nav-btn nav-instagram"
-          >
-            <i class="fab fa-instagram"></i>
-            <span>Instagram</span>
-          </a>
-          <a
-            href="https://www.tiktok.com/@drink.mate0"
-            target="_blank"
-            class="nav-btn nav-tiktok"
-          >
-            <i class="fab fa-tiktok"></i>
-            <span>TikTok</span>
-          </a>
-        </div>
+    <!-- NAVBAR -->
+    <nav id="navbar">
+      <div class="nav-logo">Yerba Mate<span>.</span></div>
+      <div class="nav-links">
+        <a
+          href="https://wa.me/9647500242233"
+          target="_blank"
+          class="nav-link whatsapp"
+        >
+          <i class="fab fa-whatsapp"></i><span>WhatsApp</span>
+        </a>
+        <a
+          href="https://www.instagram.com/drinkmate._/"
+          target="_blank"
+          class="nav-link"
+        >
+          <i class="fab fa-instagram"></i><span>Instagram</span>
+        </a>
+        <a
+          href="https://www.tiktok.com/@drink.mate0"
+          target="_blank"
+          class="nav-link"
+        >
+          <i class="fab fa-tiktok"></i><span>TikTok</span>
+        </a>
       </div>
     </nav>
 
-    <!-- Main Section -->
-    <section class="main-section">
-      <div class="main-content">
-        <div class="logo-wrapper">
-          <img src="logo.PNG" alt="Middle East Mate Logo" class="logo" />
-        </div>
-
-        <p class="description">
-          We introduce Yerba Mate to the Middle East, with availability in
-          <strong>Kurdistan & Iraq</strong>.
-        </p>
-        <p class="description">
-          Yerba mate is a traditional South American drink that has been trusted
-          for centuries — now presented in a way that feels familiar, simple,
-          and natural.
+    <!-- HERO -->
+    <section class="hero">
+      <video class="hero-video" autoplay muted loop playsinline preload="auto">
+        <source src="Matte_Ad_ScreenSize_Update.mp4" type="video/mp4" />
+      </video>
+      <div class="hero-overlay"></div>
+      <div class="hero-content">
+        <p class="hero-tagline">— Drink Different —</p>
+        <div class="hero-divider"></div>
+        <p class="hero-desc">
+          South America's original natural energy drink.<br />
+          Now in <strong>Kurdistan & Iraq</strong>.
         </p>
       </div>
     </section>
 
+    <!-- ENERGY STRIP -->
+    <div class="energy-strip">
+      <div class="energy-item">
+        <div class="energy-icon"><i class="fas fa-bolt"></i></div>
+        <div class="energy-title">Coffee Energy</div>
+        <div class="energy-sub">Clean, sustained lift</div>
+      </div>
+      <div class="energy-item">
+        <div class="energy-icon"><i class="fas fa-brain"></i></div>
+        <div class="energy-title">Tea Focus</div>
+        <div class="energy-sub">Sharp & clear mind</div>
+      </div>
+      <div class="energy-item">
+        <div class="energy-icon"><i class="fas fa-leaf"></i></div>
+        <div class="energy-title">Pure Plant Power</div>
+        <div class="energy-sub">Nothing artificial</div>
+      </div>
+    </div>
+
+    <!-- LOGO -->
+    <div class="logo-section">
+      <img src="logo.PNG" alt="Mate Logo" />
+    </div>
+
+    <!-- ABOUT -->
+    <section class="section" id="about">
+      <div class="reveal">
+        <p class="section-label">— What Is Mate —</p>
+        <h2 class="section-title">
+          Tradition in a cup.<br /><em>Energy for today.</em>
+        </h2>
+        <p class="section-body">
+          Yerba Mate is a traditional South American drink that has been trusted
+          for centuries — shared among friends, sipped through a bombilla,
+          brewed with care. We bring that same spirit to the Middle East —
+          Served Traditionally. Reimagined For Today. Enjoy It Classic, Hot, Or
+          Iced.
+        </p>
+      </div>
+    </section>
+
+    <!-- BENEFITS -->
+    <div class="benefits-wrap">
+      <div class="benefits-inner">
+        <div class="benefits-text reveal">
+          <p class="section-label">— Benefits —</p>
+          <h2 class="section-title">What mate<br /><em>does for you</em></h2>
+          <ul class="benefit-list">
+            <li>
+              <span class="benefit-dot"></span>Caffeine Energy — without the
+              crash
+            </li>
+            <li>
+              <span class="benefit-dot"></span>Mental Focus — tea-like clarity
+            </li>
+            <li>
+              <span class="benefit-dot"></span>Pure Plant Power — nothing
+              synthetic
+            </li>
+            <li><span class="benefit-dot"></span>Rich in Antioxidants</li>
+            <li><span class="benefit-dot"></span>Metabolism Support</li>
+            <li><span class="benefit-dot"></span>Everyday Performance</li>
+          </ul>
+        </div>
+        <div class="benefit-visual reveal">
+          <div class="benefit-circle">
+            <p class="benefit-circle-text">
+              "The energy of coffee,<br />the health of tea,<br />the euphoria
+              of chocolate"
+            </p>
+            <p class="benefit-circle-big">— Ancient Saying —</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- FOOTER -->
+    <footer>
+      <p>© 2025 Mate — Drink Different · Kurdistan & Iraq</p>
+    </footer>
     <script src="script.js"></script>
   </body>
 </html>
