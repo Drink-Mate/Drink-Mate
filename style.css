@@ -618,12 +618,20 @@ footer p {
 /* ─── RESPONSIVE ─── */
 @media (max-width: 768px) {
   nav {
-    padding: 14px 20px;
+    padding: 10px 16px;
+  }
+  .nav-logo {
+    font-size: 1rem;
+    letter-spacing: 2px;
+  }
+  .nav-links {
+    gap: 6px;
   }
   .nav-link {
-    padding: 7px 10px;
-    font-size: 0.72rem;
-    gap: 5px;
+    padding: 6px 8px;
+    font-size: 0.7rem;
+    gap: 4px;
+    letter-spacing: 0.5px;
   }
   .section,
   .origin-strip {
@@ -655,5 +663,14 @@ footer p {
   }
   footer {
     padding: 20px 24px;
+  }
+}
+
+@media (max-width: 380px) {
+  .nav-link span {
+    display: none;
+  }
+  .nav-link {
+    padding: 8px 10px;
   }
 }
