@@ -1,34 +1,27 @@
-// Simple hover effects for buttons
-document.querySelectorAll(".btn").forEach((btn) => {
-  btn.addEventListener("mouseenter", function () {
-    this.style.transform = "translateY(-3px)";
-  });
-
-  btn.addEventListener("mouseleave", function () {
-    this.style.transform = "translateY(0)";
-  });
+// Navbar scroll
+const navbar = document.getElementById("navbar");
+window.addEventListener("scroll", () => {
+  navbar.classList.toggle("scrolled", window.scrollY > 60);
 });
 
-// Enhanced touch feedback for mobile
-document
-  .querySelectorAll(".contact-button, .nav-phone, .nav-instagram, .nav-tiktok")
-  .forEach((link) => {
-    link.addEventListener("touchstart", function () {
-      this.style.transform = "scale(0.95)";
-      this.style.transition = "transform 0.1s ease";
+// Reveal on scroll
+const reveals = document.querySelectorAll(".reveal");
+const observer = new IntersectionObserver(
+  (entries) => {
+    entries.forEach((e) => {
+      if (e.isIntersecting) {
+        e.target.classList.add("visible");
+        observer.unobserve(e.target);
+      }
     });
+  },
+  { threshold: 0.15 },
+);
 
-    link.addEventListener("touchend", function () {
-      this.style.transform = "";
-    });
-  });
+reveals.forEach((el) => observer.observe(el));
 
-// Add click animation to contact buttons
-document.querySelectorAll(".contact-button").forEach((button) => {
-  button.addEventListener("click", function () {
-    this.style.transform = "scale(0.95)";
-    setTimeout(() => {
-      this.style.transform = "";
-    }, 150);
-  });
+// Touch feedback
+document.querySelectorAll(".contact-btn, .nav-link").forEach((el) => {
+  el.addEventListener("touchstart", () => (el.style.opacity = "0.8"));
+  el.addEventListener("touchend", () => (el.style.opacity = ""));
 });
