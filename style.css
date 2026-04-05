@@ -144,11 +144,12 @@ nav.scrolled {
   flex-direction: column;
   align-items: center;
   gap: 0;
+  margin-top: -80px; /* Adjust this number: more negative = higher up */
 }
 
 .hero-logo-img {
-  width: 160px;
-  height: 160px;
+  width: 400px;
+  height: auto;
   object-fit: contain;
   animation: fadeDown 1s ease-out 0.2s both;
   filter: drop-shadow(0 4px 24px rgba(0, 0, 0, 0.5));
@@ -185,30 +186,6 @@ nav.scrolled {
 .hero-desc strong {
   color: var(--gold-light);
   font-weight: 600;
-}
-
-.hero-scroll {
-  position: absolute;
-  bottom: 36px;
-  left: 50%;
-  transform: translateX(-50%);
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 8px;
-  color: rgba(255, 255, 255, 0.5);
-  font-size: 0.7rem;
-  letter-spacing: 3px;
-  text-transform: uppercase;
-  animation: fadeUp 1s ease-out 1.2s both;
-  cursor: pointer;
-}
-
-.hero-scroll-line {
-  width: 1px;
-  height: 48px;
-  background: linear-gradient(to bottom, rgba(201, 168, 76, 0.7), transparent);
-  animation: scrollPulse 2s ease-in-out infinite;
 }
 
 /* ─── ENERGY TRIO ─── */
@@ -257,21 +234,6 @@ nav.scrolled {
   font-size: 1.1rem;
   color: rgba(255, 255, 255, 0.6);
   font-style: italic;
-}
-
-/* ─── LOGO SECTION ─── */
-.logo-section {
-  background: var(--cream);
-  display: flex;
-  justify-content: center;
-  padding: 30px 12px 10px;
-}
-
-.logo-section img {
-  width: 300px;
-  height: 300px;
-  object-fit: contain;
-  filter: drop-shadow(0 8px 24px rgba(26, 61, 43, 0.15));
 }
 
 /* ─── SECTION: ABOUT ─── */
@@ -355,7 +317,6 @@ nav.scrolled {
 }
 
 .benefit-visual {
-  position: relative;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -400,157 +361,6 @@ nav.scrolled {
   margin-top: 16px;
 }
 
-.origin-strip {
-  padding: 80px 48px;
-  max-width: 1100px;
-  margin: 0 auto;
-  text-align: center;
-}
-
-.flags-row {
-  display: flex;
-  justify-content: center;
-  gap: 48px;
-  margin-top: 40px;
-}
-
-.flag-item {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 12px;
-}
-
-.flag-circle {
-  width: 64px;
-  height: 64px;
-  border-radius: 50%;
-  border: 2px solid var(--gold);
-  font-size: 2rem;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background: var(--cream-dark);
-  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
-}
-
-.flag-label {
-  font-family: "Cinzel", serif;
-  font-size: 0.7rem;
-  letter-spacing: 2px;
-  color: var(--text-mid);
-  text-transform: uppercase;
-}
-
-.contact-section {
-  background: var(--green-deep);
-  padding: 100px 48px;
-  text-align: center;
-  position: relative;
-  overflow: hidden;
-}
-
-.contact-section::before {
-  content: "";
-  position: absolute;
-  inset: 0;
-  background:
-    radial-gradient(
-      circle at 20% 50%,
-      rgba(201, 168, 76, 0.06) 0%,
-      transparent 60%
-    ),
-    radial-gradient(
-      circle at 80% 30%,
-      rgba(201, 168, 76, 0.05) 0%,
-      transparent 60%
-    );
-  pointer-events: none;
-}
-
-.contact-label {
-  font-family: "Cinzel", serif;
-  font-size: 0.7rem;
-  letter-spacing: 5px;
-  color: var(--gold);
-  margin-bottom: 16px;
-}
-
-.contact-title {
-  font-family: "Cormorant Garamond", serif;
-  font-size: clamp(2rem, 4vw, 3rem);
-  font-weight: 600;
-  color: #fff;
-  margin-bottom: 40px;
-  line-height: 1.2;
-}
-
-.contact-title em {
-  font-style: italic;
-  color: var(--gold-light);
-}
-
-.contact-btns {
-  display: flex;
-  justify-content: center;
-  gap: 16px;
-  flex-wrap: wrap;
-}
-
-.contact-btn {
-  display: flex;
-  align-items: center;
-  gap: 10px;
-  padding: 16px 32px;
-  text-decoration: none;
-  border-radius: 4px;
-  font-size: 0.85rem;
-  font-weight: 500;
-  letter-spacing: 2px;
-  text-transform: uppercase;
-  transition: all 0.3s ease;
-}
-
-.contact-btn i {
-  font-size: 1.2rem;
-}
-
-.btn-whatsapp {
-  background: var(--gold);
-  color: var(--green-deep);
-  border: 1px solid var(--gold);
-}
-
-.btn-whatsapp:hover {
-  background: var(--gold-light);
-  transform: translateY(-3px);
-  box-shadow: 0 12px 32px rgba(201, 168, 76, 0.3);
-}
-
-.btn-instagram {
-  background: transparent;
-  color: #fff;
-  border: 1px solid rgba(255, 255, 255, 0.3);
-}
-
-.btn-instagram:hover {
-  border-color: var(--gold);
-  color: var(--gold-light);
-  transform: translateY(-3px);
-}
-
-.btn-tiktok {
-  background: transparent;
-  color: #fff;
-  border: 1px solid rgba(255, 255, 255, 0.3);
-}
-
-.btn-tiktok:hover {
-  border-color: var(--gold);
-  color: var(--gold-light);
-  transform: translateY(-3px);
-}
-
 /* ─── FOOTER ─── */
 footer {
   background: var(--black);
@@ -590,18 +400,6 @@ footer p {
   }
 }
 
-@keyframes scrollPulse {
-  0%,
-  100% {
-    opacity: 0.4;
-    transform: scaleY(1);
-  }
-  50% {
-    opacity: 1;
-    transform: scaleY(1.15);
-  }
-}
-
 .reveal {
   opacity: 0;
   transform: translateY(32px);
@@ -633,15 +431,38 @@ footer p {
     gap: 4px;
     letter-spacing: 0.5px;
   }
-  .section,
-  .origin-strip {
+  .hero-logo-img {
+    width: 200px;
+    height: auto;
+  }
+  .section {
     padding: 70px 24px;
   }
   .benefits-wrap {
-    padding: 70px 24px;
+    padding: 48px 24px;
   }
-  .contact-section {
-    padding: 70px 24px;
+  .benefits-inner {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    align-items: center;
+  }
+  .benefits-text {
+    width: 100%;
+  }
+  .benefit-visual {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .benefit-circle {
+    width: 260px;
+    height: 260px;
+    padding: 24px;
+  }
+  .benefit-circle-text {
+    font-size: 0.95rem;
   }
   .energy-strip {
     flex-direction: column;
@@ -651,15 +472,6 @@ footer p {
   }
   .energy-item::after {
     display: none;
-  }
-  .benefits-inner {
-    grid-template-columns: 1fr;
-  }
-  .benefit-visual {
-    display: none;
-  }
-  .flags-row {
-    gap: 24px;
   }
   footer {
     padding: 20px 24px;
